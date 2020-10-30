@@ -1,0 +1,196 @@
+header{
+	background-image: url(../img/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	min-height: 500px;
+	font-family: Arial;
+	text-transform: uppercase;
+}
+
+.cabecalho{
+	text-align: center;
+	position: relative;
+	top: 160px;
+}
+
+h1{
+	font-size: 60px;
+	color: #ffffff;
+	font-weight: bolder;
+}
+
+h2{
+	font-size: 15px;
+	color: #c3c3c3
+}
+
+.menu{
+	position: relative;
+	top: 210px;
+	font-size: 13px;
+}
+
+.menu li{
+	display: inline;
+	letter-spacing: 1px;
+	padding: 18px;
+	border-radius: 30px;
+}
+
+.menu a{
+	text-decoration: none;
+	color: #bcbcbc;
+}
+
+#ativado{
+	border: 1px;
+	border-style: solid;
+	border-color: #ffffff;
+}
+
+#ativado2{
+	color: #ffffff;
+}
+
+body{
+	text-align: center;
+	font-family: Arial;
+}
+
+h3{
+	font-size: 37px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+h4{
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+p{
+	font-size: 12.7px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	line-height: 22px;
+}
+
+.principal{
+	margin-top: 58px;
+	position: relative;
+	left: 15%;
+	width: 45%;
+	text-align: left;
+	float: left;
+}
+
+.principal img{
+	margin-top: 35px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+h5{
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 17px;
+	padding-bottom: 20px;
+}
+
+.lateral{
+	width: 20%;
+	position: relative;
+	right: 16%;
+	float: right;
+	margin-top: 58px;
+	text-align: left;
+}
+
+.lateral img{
+	float: left;
+	height: 62px;
+	margin-top: 6%;
+	margin-right: 6%;
+}
+
+.lateral p{
+	font-size: 70%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.corpo-lateral{
+	position: relative;
+	top: 15px;
+}
+
+.data-lateral{
+	color: #bcbcbc;
+	text-transform: uppercase;
+}
+
+.lateral div{
+	margin-bottom: 17%;
+	margin-top: 8%;
+}
+
+.central{
+	height: 650px;
+}
+
+.mais{
+	background-color: #f2f2f2;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	height: 550px;
+	position: relative;
+	top: 40px;
+}
+
+.postagens{
+	float: left;
+	width: 20%;
+	text-align: left;
+	margin-right: 5%;
+	margin-top: 5%;
+	position: relative;
+	left: 15%;
+}
+
+.postagens img{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+button{
+	background-color: #f6643b;
+	border-radius: 30px;
+	text-transform: uppercase;
+	padding: 15px;
+	margin-top: 20px;
+	border: none;
+	color: #ffffff;
+}
+
+footer{
+	height: 410px;
+	background-color: #000000;
+}
+
+.informacoes{
+	width: 20%;
+	color: #ffffff;
+	float: left;
+	text-align: left;
+	position: relative;
+	left: 15%;
+	margin-top: 5%;
+	margin-right: 5%;
+}
+
+.informacoes p{
+	color: #c3c3c3;
+	font-size: 80%;
+	line-height: 210%;
+}
