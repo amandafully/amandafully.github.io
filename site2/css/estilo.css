@@ -1,0 +1,193 @@
+header{
+	background-color: #251300;
+	height: 450px;
+}
+
+h1{
+	color: #ffffff;
+	font-size: 350%;
+}
+
+.cabecalho{
+	position: relative;
+	top: 30%;
+}
+
+.cabecalho h5{
+	font-size: 90%;
+	color: #cdcdcd;
+	padding-top: 5px;
+}
+
+.menu{
+	position: relative;
+	top: 50%;
+}
+
+.menu li{
+	display: inline;
+	font-size: 90%;
+	letter-spacing: 2px;
+	margin-right: 3%;
+}
+
+.menu a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+#ativado{
+	background-color: #d03650;
+	padding: 1%;
+}
+
+body{
+	text-align: center;
+	font-family: Bahnschrift;
+}
+
+.bem-vindo{
+	background-color: #ed5e26;
+	height: 450px;
+}
+
+h2{
+	font-weight: bolder;
+	font-size: 40px;
+}
+
+.bem-vindo h2{
+	position: relative;
+	top: 27%;
+}
+
+.bem-vindo p{
+	width: 70%;
+	position: relative;
+	left: 15%;
+	top: 40%;
+	line-height: 150%;
+}
+
+h3{
+	font-size: 27px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.mais{
+	width: 100%;
+}
+
+.learn-more{
+	float: left;
+	width: 23%;
+	padding: 3%;
+	margin: 1%;
+	position: relative;
+	left: 7%;
+}
+
+.learn-more img{
+	width: 24%;
+	margin: 10%;
+}
+
+.learn-more p{
+	font-size: 16px;
+	position: relative;
+	top: 30px;
+	line-height: 170%;
+}
+
+.learn-more button{
+	position: relative;
+	top: 65px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #d03650;
+	padding: 24px;
+	border: none;
+	font-size: 17px;
+}
+
+.vivamus{
+	height: 1100px;
+	text-align: center;
+}
+
+h4{
+	font-size: 17px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+	top: 15%;
+}
+
+.vivamus h2{
+	position: relative;
+	top: 14%;
+}
+
+.etiam{
+	float: left;
+	width: 20%;
+	position: relative;
+	top: 20%;
+	left: 3%;
+	padding: 2%;
+}
+
+.etiam h5{
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.etiam p{
+	font-size: 16px;
+	position: relative;
+	top: 30px;
+	line-height: 170%;
+	color: #b5b7b5;
+	font-weight: 200;
+}
+
+.etiam button{
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #d03650;
+	padding: 24px;
+	border: none;
+	font-size: 17px;
+	position: relative;
+	top: 65px;
+}
+
+footer{
+	height: 600px;
+	background-color: #251300;
+}
+
+footer h4{
+	color: #7c7166;
+	position: relative;
+	top: 40%;
+}
+
+.redes-sociais{
+	position: relative;
+	top: 60%;
+}
+
+.redes-sociais img{
+	width: 2%;
+}
+
+.redes-sociais li{
+	display: inline;
+	margin-right: 3%;
+}
