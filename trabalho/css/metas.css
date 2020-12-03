@@ -1,0 +1,33 @@
+.corpo{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.conteudo{
+	display: flex;
+	align-items: center;
+	flex: 1 1 500px;
+	width: 30%;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.conteudo img{
+	width: 120px;
+	margin-right: 2%;
+}
+
+.conteudo p{
+	width: 95%;
+	text-align: left;
+	margin-right: 15px;
+}
+
+#titulo{
+	text-align: center;
+	width: 70%;
+	margin: 4% auto;
+	font-size: 22px;
+}

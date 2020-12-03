@@ -1,0 +1,16 @@
+.conteudo{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: 2% auto;
+}
+
+.conteudo img{
+	
+}
+
+.conteudo p{
+	max-width: 450px;
+	margin: 0 auto;
+}

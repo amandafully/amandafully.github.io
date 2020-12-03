@@ -1,0 +1,95 @@
+body,div,img{
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+header{
+	text-align: center;
+	width: 100%;
+	height: 180px;
+	background-color: #0a97d9;
+	color: #ffffff;
+}
+
+header h1{
+	position: relative;
+	top: 20%;
+	font-family: Haettenschweiler;
+	letter-spacing: 2px;
+	font-size: 50px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+#logo{
+	height: 38px;
+	margin-right: 2px;
+}
+
+.menu{
+	position: relative;
+	top: 30%;
+	font-size: 17px;
+}
+
+.menu li{
+	display: inline;
+	padding: 6px;
+	margin-right: 5%;
+}
+
+.menu a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#ativado{
+	background-color: #087eb5;
+}
+
+h2{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+h3{
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-top: 10px;
+	font-weight: bolder;
+}
+
+footer{
+	background-color: #0a97d9;
+	color: #ffffff;
+	height: 180px;
+}
+
+footer div{
+	width: 25%;
+	height: 100px;
+	float: left;
+	padding-left: 5%;
+	padding-right: 2%;
+	padding-top: 1%;
+}
+
+footer a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.criacao{
+	text-align: center;
+	background-color: #0a97d9;
+	color: #ffffff;
+	padding-bottom: 2%;
+}
