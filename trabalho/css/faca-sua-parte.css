@@ -1,20 +1,19 @@
 .conteudo{
 	max-width: 800px;
 	margin: 0 auto;
+	padding-top: 3%;
 }
 
 .conteudo p{
-	margin-bottom: 3%;
-	margin-top: 1%;
+	margin-top: 3%;
+	padding-bottom: 3%;
 }
 
-.faixa{
-	background-image: ;
-	text-align: center;
-	height: 200px;
+.conteudo img{
+	width: 100%;
 }
 
 h2{
-	position: relative;
-	top: 40%;
+	padding: 25px 0;
+	text-align: center;
 }
