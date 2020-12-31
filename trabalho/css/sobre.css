@@ -27,11 +27,6 @@ area{
 	outline: 0;
 }
 
-figcaption{
-	font-size: 15px;
-	text-align: center;
-}
-
 @media screen and (max-width: 1200px){
   .corpo{
 	  text-align: center;
