@@ -15,12 +15,11 @@
 
 .cabecalho-inicio h2{
 	position: relative;
-	top: 40%;
+	top: 30%;
 }
 
 .conteudo, .fatos{
 	margin: 0 2%;
-	font-size: 20px;
 }
 
 @media screen and (min-width: 1200px){
@@ -44,7 +43,7 @@
 	}
 
 	.conteudo p{
-		max-width: 600px;
+		max-width: 590px;
 	}
 
 	.conteudo h3{
@@ -63,84 +62,6 @@
 	font-size: 27px;
 	text-align: center;
 	line-height: 30px;
-}
-
-figure{
-	margin: 0 auto;
-	position: relative;
-	max-width: 500px; 
-}
-
-figure figcaption{
-	font-size: 15px;
-	text-align: center;
-	color: #c3c3c3;
-	position: absolute;
-	top: 75%;
-	width: 100%;
-	opacity: 0;
-	background-color: #000000;
-}
-
-figure:hover figcaption{
-	opacity: 1;
-}
-
-@media screen and (max-width: 1200px){
-	.cabecalho-inicio h2{
-		width: 80%;
-		line-height: 35px;
-	}
-	
-	.parte_fixa{
-		position: fixed;
-		background-color: #0a97d9;
-		height: 100px;
-		width: 100%;
-		top: 0;
-		z-index: 1;
-	}
-	
-	.cabecalho-inicio h1{
-		top: 20px;
-	}
-	
-	.corpo{
-		text-align: center;
-		padding-top: 15px;
-	}
-	
-	.corpo img{
-		width: 60%;
-		min-width: 450px;
-		margin: 10px auto;
-	}
-	
-	.conteudo{
-		width: 90%;
-		margin: 0 auto;
-		text-align: left;
-	}
-	
-	.conteudo h3{
-		margin: 5% 0;
-	}
-	
-	.corpo ul{
-		width: 90%;
-		margin: 0 auto;
-		text-align: left;
-	}
-	
-	.corpo img{
-		width: 50%;
-		margin-top: 2%;
-		margin-bottom: 2%;
-	}
-	
-	#final{
-		margin: 0 2%;
-	}
 }
 
 .small_img{
@@ -196,14 +117,15 @@ figure:hover figcaption{
     color:#fff;
     background-color: #000;
     position: absolute;
-    top:10px;
-    right: 10px;
-    padding: 1% 2%;
-    font-size: 25px;
+    top: 25px;
+    right: 25px;
+    padding: 1% 1.5%;
+    font-size: 50px;
     border:solid 1px #fff;
     transition: all ease-out .4s;
     cursor: pointer;
 }
+
 .bt_close:hover{
     background-color: #f00;
 }
@@ -218,7 +140,7 @@ figure:hover figcaption{
     top: 45%;
     right: 7%;
     padding: 5px 10px;
-    width: 20px;
+    width: 40px;
     transition: all ease-out .4s;
     cursor: pointer;
 	z-index: 1;
@@ -230,7 +152,7 @@ figure:hover figcaption{
     top: 45%;
     left: 7%;
     padding: 5px 10px;
-    width: 20px;
+    width: 40px;
     transition: all ease-out .4s;
     cursor: pointer;
 }
@@ -278,11 +200,11 @@ header .navegacao{
 }
 
 header .barra{
-	width: 10px;
-	height: 10px;
-	border: 2px solid #c3c3c3;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #ebebeb;
 	border-radius: 100%;
-	margin: 6px;
+	margin: 7px;
 }
 
 header .barra:hover{
@@ -291,6 +213,27 @@ header .barra:hover{
 
 .miniatura:hover{
 	filter: grayscale(100%);
+}
+
+figure{
+	margin: 0 auto;
+	position: relative;
+	max-width: 500px; 
+}
+
+figure figcaption{
+	padding: 10px 0;
+	text-align: center;
+	color: #c3c3c3;
+	position: absolute;
+	top: 75%;
+	width: 100%;
+	opacity: 0;
+	background-color: #000000;
+}
+
+figure:hover figcaption{
+	opacity: 1;
 }
 
 .slide{
@@ -398,8 +341,6 @@ input[name="d"]{
 	margin-left: -40%;
 }
 
-/* slides */
-
 .slideshow_cabecalho{
 	position: absolute;
 	width: 100%;
@@ -450,5 +391,78 @@ input[name="a"]{
 @media screen and (max-width: 770px){
 	.slide_cabecalho{
 		width: 940%;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	header .barra{
+		width: 30px;
+		border-radius: 50px;
+	}
+	
+	.cabecalho-inicio{
+		height: 600px;
+	}
+	
+	.slideshow_cabecalho{
+		height: 600px;
+	}
+	
+	.slide_cabecalho{
+		height: 600px;
+	}
+	
+	.slide_cabecalho img{
+		min-height: 600px;
+		height: 100%;
+	}
+	
+	.cabecalho-inicio h2{
+		width: 85%;
+		line-height: 35px;
+	}
+	
+	.parte_fixa{
+		position: fixed;
+		background-color: #0a97d9;
+		height: 150px;
+		width: 100%;
+		top: 0;
+		z-index: 1;
+	}
+	
+	.cabecalho-inicio h1{
+		top: 30px;
+	}
+	
+	.corpo{
+		text-align: center;
+		padding-top: 15px;
+	}
+	
+	.conteudo{
+		width: 90%;
+		margin: 0 auto;
+		text-align: left;
+	}
+	
+	.conteudo h3{
+		margin: 5% 0;
+	}
+	
+	.corpo ul{
+		width: 90%;
+		margin: 0 auto;
+		text-align: left;
+	}
+	
+	.corpo img{
+		width: 90%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	
+	#final{
+		margin: 0 2%;
 	}
 }
