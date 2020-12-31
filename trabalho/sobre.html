@@ -8,27 +8,73 @@
 		<link rel="stylesheet" type="text/css" href="./css/estilos.css">
 		<link rel="stylesheet" type="text/css" href="./css/sobre.css">
 	</head>
+	
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("#objetivos").mouseleave(function(){
+				$("#imagem").attr("src","./img/logo_ods.png");
+			});
+		});
+
+		function mudaImagem(num){
+			$("#imagem").attr("src","./img/logo_ods_"+num+".png");
+		}
+	</script>
+		
 	<body>
 		<header>
-			<h1><img id="logo" src="./img/peixe.png">Vida na água</h1>
-			<nav class="menu">
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li id="ativado"><a href="sobre.html">Sobre</a></li>
-					<li><a href="metas.html">Metas</a></li>
-					<li><a href="em-acao.html">Em ação</a></li>
-					<li><a href="faca-sua-parte.html">Faça sua parte</a></li>
-				</ul>
-			</nav>
+			<h1><a href="index.html"><img id="logo" src="./img/peixe.png">Vida na água</a></h1>
+			
+			<input type="checkbox" id="check">
+			<label id="icone" for="check"><img src="./img/menu_mobile.png"></label>
+			
+			<div class="barra_menu">
+				<nav class="menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a id="ativado" href="sobre.html">Sobre</a></li>
+						<li><a href="metas.html">Metas</a></li>
+						<li><a href="em-acao.html">Em ação</a></li>
+						<li><a href="faca-sua-parte.html">Faça sua parte</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		
 		<div class="corpo">
-			<img id="imagem" src="./img/logo_ods.png" alt="imagem">
-			<div class="conteudo">	
-				<p>Com apenas 10 anos pela frente, um ambicioso esforço global está em andamento para cumprir a promessa de 2030 - mobilizando mais governos, sociedade civil, empresas e conclamando todas as pessoas a fazerem suas as Metas Globais.</p>
-				<p>Hoje, o progresso está sendo feito em muitos lugares, mas, no geral, as ações para cumprir os Objetivos ainda não estão avançando na velocidade ou na escala necessária. 2020 precisa inaugurar uma década de ações ambiciosas para cumprir as Metas até 2030.</p>
-				<p>A Década de Ação clama por soluções sustentáveis aceleradas 	para todos os maiores desafios do mundo - variando da pobreza e gênero às mudanças climáticas, desigualdade e redução da lacuna financeira.</p>				
-				<p>Em setembro de 2019, o Secretário-Geral da ONU convocou todos os setores da sociedade a se mobilizarem para uma década de ação em três níveis: ação global para garantir maior liderança, mais recursos e soluções mais inteligentes para os Objetivos de Desenvolvimento Sustentável; ação local incorporando as transições necessárias nas políticas, orçamentos, instituições e estruturas regulatórias de governos, cidades e autoridades locais; e ação popular, incluindo jovens, sociedade civil, mídia, setor privado, sindicatos, academia e outras partes interessadas, para gerar um movimento imparável em busca das transformações necessárias.</p>
+			<div class="container">
+				<figure>
+					<img id="imagem" src="./img/logo_ods.png" alt="imagem" usemap="#meumapa">
+					<figcaption>Passe o mouse e clique na área desejada para saber mais</figcaption>
+				</figure>
+				
+				<map name="meumapa" id="objetivos">
+					<area id="area1" shape="poly" coords="405,90,446,146,358,188,340,163" href="https://www.globalgoals.org/1-no-poverty" target="_blank" onmousemove="mudaImagem(1)">
+					<area shape="poly" coords="451,158,470,224,373,232,364,201" href="https://www.globalgoals.org/2-zero-hunger" target="_blank" onmousemove="mudaImagem(2)">
+					<area shape="poly" coords="472,235,465,304,373,277,374,245" href="https://www.globalgoals.org/3-good-health-and-well-being" target="_blank" onmousemove="mudaImagem(3)">
+					<area shape="poly" coords="462,316,431,377,353,318,368,288" href="https://www.globalgoals.org/4-quality-education" target="_blank" onmousemove="mudaImagem(4)">
+					<area shape="poly" coords="423,387,374,435,323,351,346,328" href="https://www.globalgoals.org/5-gender-equality" target="_blank" onmousemove="mudaImagem(5)">
+					<area shape="poly" coords="363,441,299,467,281,371,312,359" href="https://www.globalgoals.org/6-clean-water-and-sanitation" target="_blank" onmousemove="mudaImagem(6)">
+					<area shape="poly" coords="287,469,217,470,235,372,268,373" href="https://www.globalgoals.org/7-affordable-and-clean-energy" target="_blank" onmousemove="mudaImagem(7)">
+					<area shape="poly" coords="204,468,138,444,192,360,222,371" href="https://www.globalgoals.org/8-decent-work-and-economic-growth" target="_blank" onmousemove="mudaImagem(8)">
+					<area shape="poly" coords="128,437,75,390,154,330,180,353" href="https://www.globalgoals.org/9-industry-innovation-and-infrastructure" target="_blank" onmousemove="mudaImagem(9)">
+					<area shape="poly" coords="68,379,35,318,131,290,147,320" href="https://www.globalgoals.org/10-reduced-inequalities" target="_blank" onmousemove="mudaImagem(10)">
+					<area shape="poly" coords="33,306,25,235,124,244,129,277" href="https://www.globalgoals.org/11-sustainable-cities-and-communities
+" target="_blank" onmousemove="mudaImagem(11)">
+					<area shape="poly" coords="27,222,48,154,136,199,126,231" href="https://www.globalgoals.org/12-responsible-consumption-and-production" target="_blank" onmousemove="mudaImagem(12)">
+					<area shape="poly" coords="53,142,97,87,162,161,141,187" href="https://www.globalgoals.org/13-climate-action" target="_blank" onmousemove="mudaImagem(13)">
+					<area shape="poly" coords="105,79,164,44,199,135,172,152" href="https://www.globalgoals.org/14-life-below-water" target="_blank" onmousemove="mudaImagem(14)">
+					<area shape="poly" coords="176,39,245,27,244,125,213,130" href="https://www.globalgoals.org/15-life-on-land" target="_blank" onmousemove="mudaImagem(15)">
+					<area shape="poly" coords="258,28,324,39,289,131,258,125" href="https://www.globalgoals.org/16-peace-justice-and-strong-institutions" target="_blank" onmousemove="mudaImagem(16)">
+					<area shape="poly" coords="337,45,395,82,329,153,302,136" href="https://www.globalgoals.org/17-partnerships-for-the-goals" target="_blank" onmousemove="mudaImagem(17)">
+				</map>
+				<div class="conteudo">	
+					<p>Com apenas 10 anos pela frente, um ambicioso esforço global está em andamento para cumprir a promessa de 2030 - mobilizando mais governos, sociedade civil, empresas e conclamando todas as pessoas a fazerem suas as Metas Globais.</p>
+					<p>Hoje, o progresso está sendo feito em muitos lugares, mas, no geral, as ações para cumprir os Objetivos ainda não estão avançando na velocidade ou na escala necessária. 2020 precisa inaugurar uma década de ações ambiciosas para cumprir as Metas até 2030.</p>
+					<p><strong>A Década de Ação</strong> clama por soluções sustentáveis aceleradas 	para todos os maiores desafios do mundo - variando da pobreza e gênero às mudanças climáticas, desigualdade e redução da lacuna financeira.</p>				
+					<p>Em setembro de 2019, o Secretário-Geral da ONU convocou todos os setores da sociedade a se mobilizarem para uma década de ação em três níveis: <span class="sl">ação global para garantir maior liderança, mais recursos e soluções mais inteligentes para os Objetivos de Desenvolvimento Sustentável</span>; ação local incorporando as transições necessárias nas políticas, orçamentos, instituições e estruturas regulatórias de governos, cidades e autoridades locais; e ação popular, incluindo jovens, sociedade civil, mídia, setor privado, sindicatos, academia e outras partes interessadas, para gerar um movimento imparável em busca das transformações necessárias.</p>
+				</div>
 			</div>
 		</div>
 		
@@ -36,26 +82,30 @@
 			<div>
 				<h4>Sobre</h4>
 				<ul>
-					<li><a href="#">Sobre a ONU</a></li>
-					<li><a href="#">Os Objetivos Sustentaveis de Desenvolvimento</a></li>
+					<li><a href="sobre.html">Sobre a ONU</a></li>
+					<li><a href="https://brasil.un.org/pt-br/sdgs">Os Objetivos Sustentaveis de Desenvolvimento</a></li>
 				</ul>
 			</div>
 			
 			<div>
 				<h4>Faça sua parte</h4>
-				<a href="faca-sua-parte.html">Como ajudar?</a>
+				<ul>
+					<li><a href="faca-sua-parte.html">Como ajudar?</a></li>
+				</ul>
 			</div>
 			
 			<div>
-				<ul>
-					<li><a href="#"><img src="" alt="">Twitter</a></li>
-					<li><a href="#"><img src="" alt="">Facebook</a></li>
-					<li><a href="#"><img src="" alt="">Google</a></li>
+				<ul class="redes_sociais">
+					<a href="https://www.facebook.com/theglobalgoals" target="_blank"><img src="./img/logo_facebook.png" alt="logo do Facebook"><li>Facebook</li></a>
+					<a href="https://www.instagram.com/TheGlobalGoals/" target="_blank"><img src="./img/logo_instagram.png" alt="logo do Instagram"><li>Instagram</li></a>
+					<a href="https://twitter.com/TheGlobalGoals" target="_blank"><img src="./img/logo_twitter.png" alt="logo do Twitter"><li>Twitter</li></a>
+					<a href="https://www.youtube.com/channel/UCRfuAYy7MesZmgOi1Ezy0ng" target="_blank"><img src="./img/logo_youtube.png" alt="logo do Youtube"><li>Youtube</li></a>
+					<a href="https://www.globalgoals.org" target="_blank"><img src="./img/logo_obs.png" alt="logo do OSD"><li>Global Goals</li></a>
 				</ul>
 			</div>
 		</footer>
 		<div class="criacao">
-			<p> Design por Amanda Fully, Rebeca Mari e Ygor Gabriel</p>
+			<p>© Copyright 2020 | Design por <a href="https://amandafully.github.io/" target="_blank">Amanda Fully</a> e <a href="https://ygorgabriel99.github.io/" target="_blank">Ygor Gabriel</a></p>
 		</div>
 	</body>
 </html>
