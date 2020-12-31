@@ -7,22 +7,147 @@
 		<link rel="stylesheet" type="text/css" href="./css/reset.css">
 		<link rel="stylesheet" type="text/css" href="./css/estilos.css">
 		<link rel="stylesheet" type="text/css" href="./css/inicio.css">
-		<link rel="stylesheet" type="text/css" href="./css/carrossel.css">
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/script.js"></script>
 	</head>
 	<body>
 		<header class="cabecalho-inicio">
-			<h1><img id="logo" src="./img/peixe.png">Vida na água</h1>
-			<nav class="menu">
-				<ul>
-					<li id="ativado"><a href="index.html">Inicio</a></li>
-					<li><a href="sobre.html">Sobre</a></li>
-					<li><a href="metas.html">Metas</a></li>
-					<li><a href="em-acao.html">Em ação</a></li>
-					<li><a href="faca-sua-parte.html">Faça sua parte</a></li>
-				</ul>
-			</nav>
+			
+			<div class="slideshow_cabecalho">
+				<div class="slide_cabecalho">
+					<input type="radio" name="a" id="a1" checked onclick="contador = 1">
+					<input type="radio" name="a" id="a2" onclick="contador = 2">
+					<input type="radio" name="a" id="a3" onclick="contador = 3">
+					<input type="radio" name="a" id="a4" onclick="contador = 4">
+					<input type="radio" name="a" id="a5" onclick="contador = 5">
+					<input type="radio" name="a" id="a6" onclick="contador = 6">
+					
+					<div class="item i1">
+						<img src="./img/cabecalho_1.jpg">
+					</div>
+					<div class="item">
+						<img src="./img/cabecalho_2.jpg">
+					</div>
+					<div class="item">
+						<img src="./img/cabecalho_3.jpg">
+					</div>
+					<div class="item">
+						<img src="./img/cabecalho_4.jpg">
+					</div>
+					<div class="item">
+						<img src="./img/cabecalho_5.jpg">
+					</div>
+					<div class="item">
+						<img src="./img/cabecalho_6.jpg">
+					</div>
+				</div>
+				
+				<div class="navegacao">
+					<label for="a1" class="barra"></label>
+					<label for="a2" class="barra"></label>
+					<label for="a3" class="barra"></label>
+					<label for="a4" class="barra"></label>
+					<label for="a5" class="barra"></label>
+					<label for="a6" class="barra"></label>
+				</div>
+			</div>
+			
+			<div class="cabecalho_menu">
+			<h1><a href="index.html"><img id="logo" src="./img/peixe.png">Vida na água</a></h1>
+			
+			<input type="checkbox" id="check">
+			<label id="icone" for="check"><img src="./img/menu_mobile.png"></label>
+			
+			<div class="barra_menu">
+				<nav class="menu">
+					<ul>
+						<li><a id="ativado" href="index.html">Inicio</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="metas.html">Metas</a></li>
+						<li><a href="em-acao.html">Em ação</a></li>
+						<li><a href="faca-sua-parte.html">Faça sua parte</a></li>
+					</ul>
+				</nav>
+			</div>
+			</div>
+			
 			<h2>Conservar e usar de forma sustentável os oceanos, mares e os recursos marinhos para o desenvolvimento sustentável</h2>
 		</header>
+		
+		<div class="modal m1">
+			<div class="modal_content">
+				<div class="modal_item">
+					<img src="./img/imagem_3_1.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_3_2.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_3_3.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_3_4.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_3_5.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_3_6.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_3_7.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_3_8.jpg" class="modal_img">
+				</div>
+			</div>
+			<span class="bt_close">&times;</span>
+			<a class="bt_ant" style="display: none"><img src="./img/botao_voltar.png"></a>
+			<a class="bt_prox"><img src="./img/botao_avancar.png"></a>
+		</div>
+			
+		<div class="modal m2">
+			<div class="modal_content">
+				<div class="modal_item">
+					<img src="./img/imagem_4_1.jpeg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_4_2.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_4_3.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_4_4.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_4_5.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_4_6.jpg" class="modal_img">
+				</div>
+			</div>
+			<span class="bt_close">&times;</span>
+			<a class="bt_ant" style="display: none"><img src="./img/botao_voltar.png"></a>
+			<a class="bt_prox"><img src="./img/botao_avancar.png"></a>
+		</div>	
+		<div class="modal m3">
+			<div class="modal_content">
+				<div class="modal_item">
+					<img src="./img/imagem_6_1.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_6_2.jpg" class="modal_img">
+				</div>
+				<div class="modal_item">
+					<img src="./img/imagem_6_3.jpg" class="modal_img">
+				</div>
+			</div>
+			<span class="bt_close">&times;</span>
+			<a class="bt_ant" style="display: none"><img src="./img/botao_voltar.png"></a>
+			<a class="bt_prox"><img src="./img/botao_avancar.png"></a>
+		</div>
+		
 		<div class="corpo">
 		
 			<div class="conteudo">
@@ -30,19 +155,19 @@
 				<p>A vida começou no oceano, e ele continua sendo o lar para a maioria das plantas e animais da Terra — de minúsculos organismos unicelulares às baleias-azuis,
 				o maior animal vivo do planeta.</p>
 
-				<p>A maior parte da vida vegetal do oceano é composta por algas microscópicas chamadas de fitoplânctons, que flutuam na superfície e, por meio da fotossíntese, produzem cerca de metade do oxigênio que os seres humanos e todas as outras criaturas terrestres respiram. 
+				<p>A maior parte da vida vegetal do oceano é composta por algas microscópicas chamadas de fitoplânctons, que flutuam na superfície e, por meio da fotossíntese, produzem cerca de <span class="destaque">metade do oxigênio</span> que os seres humanos e todas as outras criaturas terrestres respiram. 
 				As macroalgas e algas kelp são algas grandes facilmente visíveis a olho nu.</p>
 			</div>
-			<img class="imagem-redonda" src="./img/imagem_1.jpg" alt="imagem1">
+			<img src="./img/imagem_1.jpg">
 			
 			<div  class="conteudo">
 				<p>O oceano impulsiona sistemas globais que tornam a Terra habitável para a humanidade.Nossa água da chuva, água potável, clima, costas, grande parte de nossa comida
-				e até mesmo o oxigênio do ar que respiramos, são todos fornecidos e regulados pelo mar.</p>
+				e até mesmo o oxigênio do ar que respiramos, são todos fornecidos e <strong>regulados pelo mar</strong>.</p>
 				<p>O gerenciamento cuidadoso desse recurso global essencial é uma característica fundamental de um futuro sustentável. No entanto, atualmente,
 				há uma contínua deterioração das águas costeiras devido à poluição, e a acidificação dos oceanos está tendo um efeito adverso sobre o funcionamento dos ecossistemas e 
 				da biodiversidade. Isso também está impactando negativamente a pesca de pequena escala.</p>
 			</div>
-			<img class="imagem-redonda" src="./img/imagem_2.jpg" alt="imagem2">
+			<img src="./img/imagem_2.jpg">
 			
 			<div class="conteudo"> 
 				<h3>Principais poluentes</h3>
@@ -50,111 +175,118 @@
 				humana.</p>
 				
 				<p>Assim sendo, não seria poluição marinha por exemplo, o descarte de materiais orgânicos naturais, como restos de peixes e algas. Mas o descarte de material oriundo 
-				da atividade humana, como plástico, metal, papel, óleo e etc.</p>
+				da <strong>atividade humana</strong>, como plástico, metal, papel, óleo e etc.</p>
 				
 				<p>Os grandes exemplos que temos de poluição marinha são relacionados ao descarte de lixo urbano e industrial, como o despejo de plástico e metais, principalmente 
 				na China e demais tigres asiáticos.</p>
 				
 				<p>Há também os desastres nas operações de petróleo, que já lançaram milhões de litros de petróleo no mar, além dos demais materiais descartados por acidente, 
-				como a barragem da Samarco em Mariana-MG, que despejou rejeitos de minério de ferro no rio doce e consequentemente no mar.</p>
+				como a <a href="https://g1.globo.com/mg/minas-gerais/noticia/2019/01/25/ha-3-anos-rompimento-de-barragem-de-mariana-causou-maior-desastre-ambiental-do-pais-e-matou-19-pessoas.ghtml" target="_blank">barragem da Samarco em Mariana-MG</a>, que despejou rejeitos de minério de ferro no rio doce e consequentemente no mar.</p>
 			</div>
 			
+			<figure>
 			<div class="slideshow">
 				<div class="slide">
-					<input type="radio" name="r" id="r1" checked>
-					<input type="radio" name="r" id="r2">
-					<input type="radio" name="r" id="r3">
-					<input type="radio" name="r" id="r4">
-					<input type="radio" name="r" id="r5">
-					<input type="radio" name="r" id="r6">
-					<input type="radio" name="r" id="r7">
-					<input type="radio" name="r" id="r8">
+					<input type="radio" name="b" id="b1" checked>
+					<input type="radio" name="b" id="b2">
+					<input type="radio" name="b" id="b3">
+					<input type="radio" name="b" id="b4">
+					<input type="radio" name="b" id="b5">
+					<input type="radio" name="b" id="b6">
+					<input type="radio" name="b" id="b7">
+					<input type="radio" name="b" id="b8">
 					
 					<div class="item i1">
-						<img src="./img/imagem_3_1.jpg">
+						<img src="./img/imagem_3_1.jpg" class="small_img s1">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_3_2.jpg">
+						<img src="./img/imagem_3_2.jpg" class="small_img s1">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_3_3.jpg">
+						<img src="./img/imagem_3_3.jpg" class="small_img s1">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_3_4.jpg">
+						<img src="./img/imagem_3_4.jpg" class="small_img s1">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_3_5.jpg">
+						<img src="./img/imagem_3_5.jpg" class="small_img s1">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_3_6.jpg">
+						<img src="./img/imagem_3_6.jpg" class="small_img s1">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_3_7.jpg">
+						<img src="./img/imagem_3_7.jpg" class="small_img s1">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_3_8.jpg">
+						<img src="./img/imagem_3_8.jpg" class="small_img s1">
 					</div>
 				</div>
 				
 				<div class="navegacao">
-					<label for="r1" class="barra"></label>
-					<label for="r2" class="barra"></label>
-					<label for="r3" class="barra"></label>
-					<label for="r4" class="barra"></label>
-					<label for="r5" class="barra"></label>
-					<label for="r6" class="barra"></label>
-					<label for="r7" class="barra"></label>
-					<label for="r8" class="barra"></label>
+					<label for="b1" class="barra"><img src="./img/imagem_3_1.jpg" class="miniatura"></label>
+					<label for="b2" class="barra"><img src="./img/imagem_3_2.jpg" class="miniatura"></label>
+					<label for="b3" class="barra"><img src="./img/imagem_3_3.jpg" class="miniatura"></label>
+					<label for="b4" class="barra"><img src="./img/imagem_3_4.jpg" class="miniatura"></label>
+					<label for="b5" class="barra"><img src="./img/imagem_3_5.jpg" class="miniatura"></label>
+					<label for="b6" class="barra"><img src="./img/imagem_3_6.jpg" class="miniatura"></label>
+					<label for="b7" class="barra"><img src="./img/imagem_3_7.jpg" class="miniatura"></label>
+					<label for="b8" class="barra"><img src="./img/imagem_3_8.jpg" class="miniatura"></label>
 				</div>
 			</div>
+			<figcaption>Clique na imagem para visualização em tela cheia</figcaption>
+			</figure>
 			
+			<figure>
 			<div class="slideshow">
 				<div class="slide">
-					<input type="radio" name="s" id="s1" checked>
-					<input type="radio" name="s" id="s2">
-					<input type="radio" name="s" id="s3">
-					<input type="radio" name="s" id="s4">
-					<input type="radio" name="s" id="s5">
-					<input type="radio" name="s" id="s6">
+					<input type="radio" name="c" id="c1" checked>
+					<input type="radio" name="c" id="c2">
+					<input type="radio" name="c" id="c3">
+					<input type="radio" name="c" id="c4">
+					<input type="radio" name="c" id="c5">
+					<input type="radio" name="c" id="c6">
 	
 					<div class="item i1">
-						<img src="./img/imagem_4_1.jpeg">
+						<img src="./img/imagem_4_1.jpeg" class="small_img s2">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_4_2.jpg">
+						<img src="./img/imagem_4_2.jpg" class="small_img s2">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_4_3.jpg">
+						<img src="./img/imagem_4_3.jpg" class="small_img s2">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_4_4.jpg">
+						<img src="./img/imagem_4_4.jpg" class="small_img s2">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_4_5.jpg">
+						<img src="./img/imagem_4_5.jpg" class="small_img s2">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_4_6.jpg">
+						<img src="./img/imagem_4_6.jpg" class="small_img s2">
 					</div>
 				</div>
 				
 				<div class="navegacao">
-					<label for="s1" class="barra"></label>
-					<label for="s2" class="barra"></label>
-					<label for="s3" class="barra"></label>
-					<label for="s4" class="barra"></label>
-					<label for="s5" class="barra"></label>
-					<label for="s6" class="barra"></label>
+					<label for="c1" class="barra"><img src="./img/imagem_4_1.jpeg" class="miniatura"></label>
+					<label for="c2" class="barra"><img src="./img/imagem_4_2.jpg" class="miniatura"></label>
+					<label for="c3" class="barra"><img src="./img/imagem_4_3.jpg" class="miniatura"></label>
+					<label for="c4" class="barra"><img src="./img/imagem_4_4.jpg" class="miniatura"></label>
+					<label for="c5" class="barra"><img src="./img/imagem_4_5.jpg" class="miniatura"></label>
+					<label for="c6" class="barra"><img src="./img/imagem_4_6.jpg" class="miniatura"></label>
 				</div>
 			</div>
-			<div>
+			<figcaption>Clique na imagem para visualização em tela cheia</figcaption>
+			</figure>
+			
+			<div class="fatos">
 				<ul>
 					<li>As águas costeiras estão se deteriorando devido à poluição e eutrofização. Sem esforços combinados, espera-se que a eutrofização costeira aumente em 20% dos grandes ecossistemas marinhos até 2050.</li>
 					<li>Aproximadamente 80 por cento da poluição marinha e costeira tem origem em terra - incluindo escoamento agrícola, pesticidas, plásticos e esgoto não tratado.</li>
-					<li>Em todo o mundo, um milhão de garrafas plásticas de bebidas são compradas a cada minuto, enquanto até 5 trilhões de sacolas plásticas descartáveis são usadas no mundo todo a cada ano.</li>	
+					<li>Em todo o mundo, <span class="destaque">um milhão</span> de garrafas plásticas de bebidas são compradas a cada minuto, enquanto até 5 <span class="destaque">trilhões</span> de sacolas plásticas descartáveis são usadas no mundo todo a cada ano.</li>	
 				</ul>
 			</div>
 			
-			<div>
+			<div class="fatos">
 				<ul>
 					<li>Os oceanos cobrem três quartos da superfície da Terra, contêm 97 por cento da água da Terra e representam 99 por cento do espaço vital do planeta em volume.</li>
 					<li>Os oceanos absorvem cerca de 30 por cento do dióxido de carbono produzido pelos humanos, amortecendo os impactos do aquecimento global.</li>
@@ -163,76 +295,83 @@
 					<li>O calor do oceano está em níveis recordes, causando ondas de calor marinhas generalizadas.</li>
 				</ul>
 			</div>
-			<img src="./img/imagem_5.jpg" alt="imagem 5">
+			<img src="./img/imagem_5.jpg">
 			
+			<figure>
 			<div class="slideshow">
 				<div class="slide">
-					<input type="radio" name="c" id="c1" checked>
-					<input type="radio" name="c" id="c2">
-					<input type="radio" name="c" id="c3">
+					<input type="radio" name="d" id="d1" checked>
+					<input type="radio" name="d" id="d2">
+					<input type="radio" name="d" id="d3">
 	
 					<div class="item i1">
-						<img src="./img/imagem_6_1.jpg">
+						<img src="./img/imagem_6_1.jpg" class="small_img s3">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_6_2.jpg">
+						<img src="./img/imagem_6_2.jpg" class="small_img s3">
 					</div>
 					<div class="item">
-						<img src="./img/imagem_6_3.jpg">
+						<img src="./img/imagem_6_3.jpg" class="small_img s3">
 					</div>
 				</div>
 				
 				<div class="navegacao">
-					<label for="c1" class="barra"></label>
-					<label for="c2" class="barra"></label>
-					<label for="c3" class="barra"></label>
+					<label for="d1" class="barra"><img src="./img/imagem_6_1.jpg" class="miniatura"></label>
+					<label for="d2" class="barra"><img src="./img/imagem_6_2.jpg" class="miniatura"></label>
+					<label for="d3" class="barra"><img src="./img/imagem_6_3.jpg" class="miniatura"></label>
 				</div>
 			</div>
-			<div>
+			<figcaption>Clique na imagem para visualização em tela cheia</figcaption>
+			</figure>
+			
+			<div class="fatos">
 				<ul>
 					<li>Cerca de 680 milhões de pessoas vivem em zonas costeiras baixas - espera-se que aumente para um bilhão até 2050.</li>
 					<li>O transporte sustentável e resiliente ao clima, incluindo o transporte marítimo, é fundamental para o desenvolvimento sustentável. Cerca de 80 por cento do volume do comércio internacional de mercadorias é transportado por mar, e a porcentagem é ainda maior para a maioria dos países em desenvolvimento.</li>
 				</ul>
 			</div>
 			
-			<div>
-				 <ul>
-					<li>Mais de três bilhões de pessoas dependem da biodiversidade marinha e costeira para seu sustento.</li>
+			<div class="fatos">
+				  <ul>
+					<li>Mais de três bilhões de pessoas <strong>dependem</strong> da biodiversidade marinha e costeira para seu sustento.</li>
 					<li>Globalmente, o valor de mercado dos recursos e indústrias marinhos e costeiros é estimado em US $ 3 trilhões por ano ou cerca de 5 por cento do PIB global.</li>
 					<li>A pesca marinha emprega direta ou indiretamente mais de 200 milhões de pessoas.</li>
 				</ul>
 			</div>
-			<img src="./img/imagem_7.jpg" alt="imagem 7">
-		</div>
+			<img src="./img/imagem_7.jpg">
 		
-		<div id="final">
-			<p>Salvar nosso oceano deve permanecer uma prioridade. A biodiversidade marinha é crítica para a saúde das pessoas e de nosso planeta. As áreas marinhas protegidas precisam ser administradas com eficácia e recursos adequados, e regulamentos precisam ser implementados para reduzir a pesca predatória, a poluição marinha e a acidificação dos oceanos.</p>
+			<div id="final">
+				<p class="destaque">Salvar nosso oceano deve permanecer uma prioridade. A biodiversidade marinha é crítica para a saúde das pessoas e de nosso planeta.</p>
+			</div>
 		</div>
-		
 		<footer>
 			<div>
 				<h4>Sobre</h4>
 				<ul>
-					<li><a href="#">Sobre a ONU</a></li>
-					<li><a href="#">Os Objetivos Sustentaveis de Desenvolvimento</a></li>
+					<li><a href="sobre.html">Sobre a ONU</a></li>
+					<li><a href="https://brasil.un.org/pt-br/sdgs">Os Objetivos Sustentaveis de Desenvolvimento</a></li>
 				</ul>
 			</div>
 			
 			<div>
 				<h4>Faça sua parte</h4>
-				<a href="faca-sua-parte.html">Como ajudar?</a>
+				<ul>
+					<li><a href="faca-sua-parte.html">Como ajudar?</a></li>
+				</ul>
 			</div>
 			
 			<div>
-				<ul>
-					<li><a href="#"><img src="" alt="">Twitter</a></li>
-					<li><a href="#"><img src="" alt="">Facebook</a></li>
-					<li><a href="#"><img src="" alt="">Google</a></li>
+				<ul class="redes_sociais">
+					<a href="https://www.facebook.com/theglobalgoals" target="_blank"><img src="./img/logo_facebook.png" alt="logo do Facebook"><li>Facebook</li></a>
+					<a href="https://www.instagram.com/TheGlobalGoals/" target="_blank"><img src="./img/logo_instagram.png" alt="logo do Instagram"><li>Instagram</li></a>
+					<a href="https://twitter.com/TheGlobalGoals" target="_blank"><img src="./img/logo_twitter.png" alt="logo do Twitter"><li>Twitter</li></a>
+					<a href="https://www.youtube.com/channel/UCRfuAYy7MesZmgOi1Ezy0ng" target="_blank"><img src="./img/logo_youtube.png" alt="logo do Youtube"><li>Youtube</li></a>
+					<a href="https://www.globalgoals.org" target="_blank"><img src="./img/logo_obs.png" alt="logo do OSD"><li>Global Goals</li></a>
 				</ul>
 			</div>
 		</footer>
 		<div class="criacao">
-			<p> Design por Amanda Fully, Rebeca Mari e Ygor Gabriel</p>
+			<p>© Copyright 2020 | Design por <a href="https://amandafully.github.io/" target="_blank">Amanda Fully</a> e <a href="https://ygorgabriel99.github.io/" target="_blank">Ygor Gabriel</a></p>
 		</div>
 	</body>
 </html>
