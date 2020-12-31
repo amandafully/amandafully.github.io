@@ -4,11 +4,21 @@ body,div,img{
 	line-height: 25px;
 }
 
+body{
+	background-image: linear-gradient(#0a97d9,#021b26);
+}
+
+.corpo{
+	background-color: #fff;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 2.5%;
+}
+
 header{
 	text-align: center;
 	width: 100%;
 	height: 180px;
-	background-color: #0a97d9;
 	color: #ffffff;
 }
 
@@ -25,6 +35,11 @@ header h1{
 	margin: 0 auto;
 }
 
+h1 a{
+	color: #fff;
+	text-decoration: none;
+}
+
 #logo{
 	height: 38px;
 	margin-right: 2px;
@@ -32,17 +47,17 @@ header h1{
 
 .menu{
 	position: relative;
-	top: 30%;
+	top: 30px;
 	font-size: 17px;
 }
 
 .menu li{
 	display: inline;
-	padding: 6px;
-	margin-right: 5%;
 }
 
 .menu a{
+	margin-right: 5%;
+	padding: 7px;
 	text-decoration: none;
 	color: #ffffff;
 }
@@ -51,11 +66,15 @@ header h1{
 	background-color: #087eb5;
 }
 
+.menu a:hover{
+	background-color: #06597f;
+}
+
 h2{
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
-	font-size: 22px;
+	font-size: 25px;
 	text-transform: uppercase;
 	font-weight: bolder;
 }
@@ -68,28 +87,201 @@ h3{
 }
 
 footer{
-	background-color: #0a97d9;
 	color: #ffffff;
 	height: 180px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	align-content: flex-start;
 }
 
 footer div{
+	margin-top: 2%;
 	width: 25%;
-	height: 100px;
-	float: left;
-	padding-left: 5%;
-	padding-right: 2%;
-	padding-top: 1%;
+}
+
+footer h4{
+	padding-bottom: 10px;
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: bolder;
 }
 
 footer a{
 	text-decoration: none;
-	color: #ffffff;
+	color: #f2f2f2;
+}
+
+footer li{
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+
+footer img{
+	width: 20px;
+	margin-bottom: 3px;
+	margin-right: 10px;	
+}
+
+.redes_sociais{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 70%;
+}
+
+.redes_sociais a{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.redes_sociais li{
+	padding-top: 3%;
+	font-size: 13px;
+	margin-right: 10px;
 }
 
 .criacao{
+	font-size: 15px;
 	text-align: center;
-	background-color: #0a97d9;
 	color: #ffffff;
 	padding-bottom: 2%;
+}
+
+.criacao a{
+	color: #fff;
+}
+
+.destaque{
+	text-transform: uppercase;
+}
+
+strong{
+	font-weight: bolder;
+}
+
+@media screen and (min-width: 1000px){
+	#icone{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	p{
+		font-size: 18px;
+	}
+	
+	h2{
+		font-size: 22px;
+	}
+	
+	h3{
+		font-size: 18px;
+	}
+	
+	header{
+		background-color: #0a97d9;
+		height: 100px;
+		position: sticky;
+		top: 0;
+	}
+	
+	header h1{
+		position: relative;
+		top: 20%;
+		font-size: 70px;
+	}
+	
+	#logo{
+		height: 55px;
+	}
+	
+	label img{
+		width: 30px;
+	}
+
+	#check{
+		display: none;
+	}
+
+	#icone{
+		cursor: pointer;
+		padding: 15px;
+		position: absolute;
+		left: 0;
+		top: 20px;
+		z-index: 2;
+	}
+
+	.barra_menu{
+		background-color: #0a97d9;
+		height: 100vh;
+		width: 300px;
+		position: absolute;
+		top: 0;
+		left: -300px;
+		transition: all .2s linear;
+		z-index: 1;
+	}
+
+	.menu{
+		width: 100%;
+		position: absolute;
+	}
+
+	.menu a{
+		position: relative;
+		top: 40px;
+		padding: 20px;
+		text-align: left;
+		transition: all .2s linear;
+		display: block;
+	}
+
+	#check:checked ~ .barra_menu{
+		transform: translate(300px);
+	}
+	
+	footer{
+		height: 250px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	footer div{
+		margin: 7px 0 auto;
+		width: 42%;
+		padding-left: 5%;
+		padding-right: 2%;
+		padding-top: 1%;
+	}
+	
+	footer img{
+		width: 30px;
+	}
+	
+	footer h4{
+		font-size: 20px;
+	}
+	
+	footer li{
+		font-size: 18px;
+	}
+	
+	.redes_sociais{
+		width: 100%;
+		display: flex;
+		margin: 10px auto;
+		justify-content: justify;
+	}
+	
+	.redes_sociais li{
+		display: none;
+		text-align: center;	
+	}
+	
+	.criacao p{
+		font-size: 10px;
+	}
 }
