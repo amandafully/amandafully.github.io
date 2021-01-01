@@ -27,6 +27,10 @@ area{
 	outline: 0;
 }
 
+.invisivel{
+	display: none;
+}
+
 @media screen and (max-width: 1200px){
   .corpo{
 	  text-align: center;
