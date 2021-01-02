@@ -191,6 +191,7 @@ figcaption{
 		position: relative;
 		top: 20%;
 		font-size: 80px;
+		margin: 0 auto;
 	}
 	
 	#logo{
