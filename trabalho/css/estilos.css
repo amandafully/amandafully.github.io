@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 body{
 	background-image: linear-gradient(#0a97d9,#021b26);
 	font-family: Arial, sans-serif;
@@ -18,16 +20,17 @@ header{
 }
 
 h1{
+	display: hidden;
 	position: relative;
 	top: 20%;
-	font-family: Haettenschweiler;
+	font-family: Anton;
 	letter-spacing: 2px;
 	font-size: 50px;
 	text-transform: uppercase;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0 auto;
+	margin: 1.5% auto;
 }
 
 h1 a{
@@ -36,7 +39,7 @@ h1 a{
 }
 
 #logo{
-	height: 38px;
+	height: 43px;
 	margin-right: 2px;
 }
 
@@ -166,6 +169,10 @@ figcaption{
 	text-align: center;
 }
 
+#check{
+	display: none;
+}
+
 @media screen and (min-width: 1100px){
 	#icone{
 		display: none;
@@ -183,7 +190,7 @@ figcaption{
 	h1{
 		position: relative;
 		top: 20%;
-		font-size: 88px;
+		font-size: 80px;
 	}
 	
 	#logo{
@@ -192,10 +199,6 @@ figcaption{
 	
 	label img{
 		width: 60px;
-	}
-
-	#check{
-		display: none;
 	}
 
 	#icone{
